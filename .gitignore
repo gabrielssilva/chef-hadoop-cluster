@@ -1,0 +1,7 @@
+# Vim files
+*.sw*
+
+# Local config giles
+.ssh_config
+.vagrant/*
+tmp/*

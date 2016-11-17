@@ -1,0 +1,9 @@
+master1:
+  run_list:
+    - recipe[basics]
+slave1:
+  run_list:
+    - recipe[basics]
+slave2:
+  run_list:
+    - recipe[basics]
