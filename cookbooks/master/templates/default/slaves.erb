@@ -1,0 +1,3 @@
+<% node.hosts['masters'].merge(node.hosts['slaves']).each do |host, ip| %>
+<%= host %>
+<% end %>

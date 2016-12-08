@@ -1,0 +1,5 @@
+127.0.0.1 localhost
+
+<% node.hosts['masters'].merge(node.hosts['slaves']).each do |host, ip| %>
+<%= "#{ip} #{host}" %>
+<% end %>

@@ -24,4 +24,8 @@ Vagrant.configure("2") do |config|
       server.vm.network "private_network", ip: (base_ip % (vm_id+=1))
     end
   end
+
+	config.vm.provider "virtualbox" do |vm|
+		vm.memory = "1024"
+	end
 end

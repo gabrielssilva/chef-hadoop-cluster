@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value><%= node.hosts['masters'].first.first %>:8030</value>
+  </property> 
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value><%= node.hosts['masters'].first.first %>:8032</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value><%= node.hosts['masters'].first.first %>:8088</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value><%= node.hosts['masters'].first.first %>:8031</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value><%= node.hosts['masters'].first.first %>:8033</value>
+  </property>
+</configuration>

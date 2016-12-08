@@ -1,6 +1,7 @@
 master1:
   run_list:
     - recipe[basics]
+    - recipe[master]
 slave1:
   run_list:
     - recipe[basics]
